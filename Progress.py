@@ -1,3 +1,10 @@
+def f_rec(n):
+  if n < 3 and n >= 0:
+    return n
+  else:
+    return  f_rec(n-1) + f_rec(n-2) + f_rec(n-3)
+f_rec(10) 
+
 def f_iter(n):
     a = 0
     b = 1
