@@ -16,4 +16,11 @@ def f_iter(n):
         c = temp
         n -= 1   
     return a  
-f_iter(5)
+f_iter(5)   
+ 
+
+def f_3(n,a,b,c):
+    if n == 0:
+        return a
+    else:
+        return f_3(n-1 , b , c , a + b + c)    
